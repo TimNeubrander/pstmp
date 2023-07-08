@@ -24,6 +24,8 @@ discussion formats
 Challenges
 - Are URIs requirements
 - protocol for "Privacy-ish" preservation (may not be compatable with both verifiable and reconstructable)
+- federated gatekeeping for private group discussions
+
 
 Discussions among entities can be transformed into a collection of messages.  Stored messages combined necessary metadata may be used to fully or partially reconstruct discussions from the perspective of 
 
