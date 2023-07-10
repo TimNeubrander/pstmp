@@ -57,33 +57,42 @@ Structured collection of messages is a discussion
 Discussions may be publish in part or whole by 
 
 Transformation functions
-generation (deletion/retraction)
-witness/validation (denial/invalidation)
-Optical Character Recognition (screenshot)
-Transcription (Text-to-Speech)
-Alt Tag (AI Image Generation)
-Tokenize (Compile)
-fork graph (merge graph)
-attribution
+- generation (deletion/retraction)
+- witness/validation (denial/invalidation)
+- Optical Character Recognition (screenshot)
+- Transcription (Text-to-Speech)
+- Alt Tag (AI Image Generation)
+- Tokenize (Compile)
+- fork graph (merge graph)
+- attribution
 
 
 Entity roles
-message author
-message forwarded
-message publisher
-discussion initiator
-discussion moderation
-discussion publisher
+- message author
+- message forwarded
+- message publisher
+- discussion initiator
+- discussion moderation
+- discussion publisher
 
 Identity functions
-Trust Delegate
-Retire Delegate (remove trust)
+- Establish Entity Root Trust
+- Replace root trust
+- Generate Delegate (requires Root)
+- Retire Delegate (remove trust)
+- Delegate Authenticates Root Trust (may require OOB Proof Key)
 
 message anatomony
-Body (required)
-Body hash (required)
-reply to context
-body signature
-reply to sub-discussion (message) signature
-reply to discussion signature
-message and message context
+- Body (required)
+- Body hash (required)
+- reply to context
+- body signature
+- reply to sub-discussion (message) signature
+- reply to discussion signature
+- message and message context
+ 
+Trust Chain
+Entity (Root Trust) -> Master Proof Key
+Root Trust + Delegate Proof Key -> Delegate 
+Entity + Master Proof key -> Replacement Entity (Can generate self Destruct claim verifiable by delegates using master Proof key???  Optional pointer to replacement entity)
+Entity + Delegate Proof Key -> Replace Delegate (Can generate destroy delegate claim verifiable by public with pseudonym and destroy claim???, optional pointer to replacment delegate)
