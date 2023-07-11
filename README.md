@@ -7,7 +7,7 @@ Distributed messaging protocol inspired by git and Steve Gibson's [SQRL](https:/
 
 PStMP attempts create a stored message format and associated protocol to facilitate verifiable distributed discussions among pseudonymous entities.  Distributed Discussions may be moderated, curated, branched, merged independently.
 
-## On-ramp 1. Create transformer to take existing discussion format into PStMP and back into original format (Lossy and lossless versions)
+### On-ramp 1. Create transformer to take existing discussion format into PStMP and back into original format (Lossy and lossless versions)
 
 discussion formats
 - webpage
@@ -27,7 +27,7 @@ Challenges
 - onboarding content (claim, reputation, or proof)
 
 
-## On-ramp 2. allow for hybrid participation on existing platforms
+### On-ramp 2. allow for hybrid participation on existing platforms
 
 Publication
 - Creditright over copyright (copyright to protect creditright by default.  May be solved by Creative Commons?)
@@ -37,7 +37,7 @@ Challenges
 - forked/multiverse discussion splitting
 - 
 
-## On-ramp 3. Create Pseudonymous account/identity
+### On-ramp 3. Create Pseudonymous account/identity
 
 User Facing identity presentation
 - Pseudonymous accounts create the basis for reputational systems.  ActivityPub uses "Actor" ID
@@ -52,7 +52,7 @@ Challenges
 - Stolen identity resolution (may require trust/proof)
 - If proof who validates? (Some validation systems require uploading of government issues documentation)
 
-## On-ramp 4. Reputation systems
+### On-ramp 4. Reputation systems
 
 Is it possible to have an open federated moderation system?  Many existing reputation systems rely on opacity ("Security Reasons") for proper functioning as almost all systems are instituted to prevent harm from "bad" actors
 
