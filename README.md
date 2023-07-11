@@ -65,6 +65,7 @@ Existing reputation systems
 - voting systems like reddit, youtube
 - Interaction tracker (engagement, click, stop scroll signals)
 - Captcha completion
+- Peer reviewed research (reputation by association??)
 
 
 Challenges
