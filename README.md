@@ -5,9 +5,9 @@ Distributed messaging protocol inspired by git and Steve Gibson's [SQRL](https:/
 
 # Brain Dump
 
-PStMP attempts create a stored message format and associated protocol to facilitate verifiable distributed discussions among pseudonymouns entities.  Distrubited Discussions may be moderated, curated, branched, merged independantly.
+PStMP attempts create a stored message format and associated protocol to facilitate verifiable distributed discussions among pseudonymous entities.  Distributed Discussions may be moderated, curated, branched, merged independently.
 
-On-ramp 1. create transformer to take existing discussion format into PStMP and back into original format (Lossy and lossess versions)
+## On-ramp 1. Create transformer to take existing discussion format into PStMP and back into original format (Lossy and lossless versions)
 
 discussion formats
 - webpage
@@ -17,17 +17,17 @@ discussion formats
 - Podcast Audio
 - social media public (reddit, twitter)
 - social media DM
-- multi contrubitor (wikipedia, git)
+- multi contributor (Wikipedia, git)
 - Forum (stack overflow)
 
 Challenges
 - Are URIs requirements
-- protocol for "Privacy-ish" preservation (may not be compatable with both verifiable and reconstructable)
+- protocol for "Privacy-ish" preservation (may not be compatible with both verifiable and reconstructable)
 - federated gatekeeping for private group discussions
 - onboarding content (claim, reputation, or proof)
 
 
-On-ramp 2. allow for hybrid participation on existing platforms
+## On-ramp 2. allow for hybrid participation on existing platforms
 
 Publication
 - Creditright over copyright (copyright to protect creditright by default.  May be solved by Creative Commons?)
@@ -37,15 +37,40 @@ Challenges
 - forked/multiverse discussion splitting
 - 
 
-On-ramp 3. Create Pseudonymous account/identity
+## On-ramp 3. Create Pseudonymous account/identity
+
+User Facing identity presentation
 - Pseudonymous accounts create the basis for reputational systems.  ActivityPub uses "Actor" ID
-- Balance privacy and transparency. Allow complete privacy or transparency to start and allow transition to openess (not required) or allow alternate pseudonyms for public figure to allow private engagement.
+- Some users will want to connect a subset of pseudonyms to "real world" identities (verified accounts
+- Balance privacy and transparency. Allow complete privacy or transparency to start and allow transition to openness (not required) or allow alternate pseudonyms for public figure to allow private engagement.
 
 Entity (Actor?) -> Delegates (trusted device/app/self-host) -> Identities -> Pseudonym(s) on platform
 Core User Trust -> iPhone -> User Work (user-work@example.com) -> Display: @user@mastodon.social, ID: (Pseudonym hash)
 
 Challenges
 - How can community protect participants (different responsibility models for different communities?)
+- Stolen identity resolution (may require trust/proof)
+- If proof who validates? (Some validation systems require uploading of government issues documentation)
+
+## On-ramp 4. Reputation systems
+
+Is it possible to have an open federated moderation system?  Many existing reputation systems rely on opacity ("Security Reasons") for proper functioning as almost all systems are instituted to prevent harm from "bad" actors
+
+What is reputation?
+- reputation is metadata (contextualized?) about an instantiation of an entity that is not controlled (must not be controlled??) by that entity
+- May be used to limit access to platform
+
+Existing reputation systems
+- email spam filtering (Domain, Account, message)
+- voting systems like reddit, youtube
+- Interaction tracker (engagement, click, stop scroll signals)
+- Captcha completion
+
+
+Challenges
+- Well implemented reputation systems foster trust in platforms, and may be the basis for continued platform participation for the platform's users
+- "Fairness" platforms that implement "unfair" reuptation systems may lose trust
+
 
 Discussions among entities can be transformed into a collection of messages.  Stored messages combined necessary metadata may be used to fully or partially reconstruct discussions from the perspective of participants.
 
