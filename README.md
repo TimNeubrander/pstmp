@@ -122,3 +122,6 @@ Entity (Root Trust) -> Master Proof Key
 Root Trust + Delegate Proof Key -> Delegate 
 Entity + Master Proof key -> Replacement Entity (Can generate self Destruct claim verifiable by delegates using master Proof key???  Optional pointer to replacement entity)
 Entity + Delegate Proof Key -> Replace Delegate (Can generate destroy delegate claim verifiable by public with pseudonym and destroy claim???, optional pointer to replacment delegate)
+
+
+Maybe use IPFS primitaves for persistance?
