@@ -124,4 +124,5 @@ Entity + Master Proof key -> Replacement Entity (Can generate self Destruct clai
 Entity + Delegate Proof Key -> Replace Delegate (Can generate destroy delegate claim verifiable by public with pseudonym and destroy claim???, optional pointer to replacment delegate)
 
 
-Maybe use IPFS primitaves for persistance?
+Maybe use [IPFS](https://docs.ipfs.tech) primitaves for persistance?
+[CID](https://docs.ipfs.tech/concepts/content-addressing/)s look promising.
